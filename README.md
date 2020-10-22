@@ -23,4 +23,4 @@ As seguintes regras devem ser seguidas nesta formatação:
 * Swashbuckle.AspNetCore (Swagger)
 
 ## Procedimento para executar a aplicação
-* Vídeo com a demonstração detalhada de como a aplicação deve ser executada:
+* Consulte o documento 'RoteiroExecucaoProjeto.pdf' para esclarecer como executar o projeto
