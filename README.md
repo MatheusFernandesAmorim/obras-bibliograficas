@@ -17,10 +17,10 @@ As seguintes regras devem ser seguidas nesta formatação:
 * "da", "de", "do", "das", "dos" não fazem parte do sobrenome e não iniciam por letra maiúscula.
 
 ## Tecnologia
-* .Net Core 3.1
+* .Net Core, versão 3.1
 
 ## Componentes
-* Swashbuckle.AspNetCore (Swagger)
+* Swashbuckle.AspNetCore (Swagger), versão 5.6.3
 
 ## Procedimento para executar a aplicação
-* Consulte o documento 'RoteiroExecucaoProjeto.pdf' para esclarecer como executar o projeto
+* Consulte o documento 'RoteiroExecucaoProjeto.pdf' para esclarecer como executar o projeto.
