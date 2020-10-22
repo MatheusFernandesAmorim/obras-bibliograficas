@@ -55,8 +55,7 @@ namespace ObrasBibliograficas.Servicos.Services
                 // Verifica se o nome completo possui apenas 1 parte
                 if (partesNome.Length.Equals(1))
                 {
-                    listaNomesAutoresFormatados.Add(partesNome.Last().ToUpper());
-                    break;
+                    listaNomesAutoresFormatados.Add(partesNome.Last().ToUpper());                   
                 }
                 // Verifica se o nome completo possui mais que 1 parte
                 else if (partesNome.Length > 1)
