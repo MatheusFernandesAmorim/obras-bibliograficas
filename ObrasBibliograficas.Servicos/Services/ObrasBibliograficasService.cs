@@ -52,13 +52,8 @@ namespace ObrasBibliograficas.Servicos.Services
                 // Realiza a separação das partes do nome completo
                 string[] partesNome = nomeAutor.Split(' ');
 
-                // Verifica se o nome completo possui apenas 1 parte
-                if (partesNome.Length.Equals(1))
-                {
-                    listaNomesAutoresFormatados.Add(partesNome.Last().ToUpper());                   
-                }
-                // Verifica se o nome completo possui mais que 1 parte
-                else if (partesNome.Length > 1)
+                // Verifica se o nome completo possui 1 parte ou mais
+                if (partesNome.Length >= 1)
                 {
                     listaNomesAutoresFormatados.Add(TratarListaNomes(partesNome));
                 }
@@ -79,11 +74,11 @@ namespace ObrasBibliograficas.Servicos.Services
             // Realiza o tratamento para os sobrenomes especiais
             partesNome = Tratamentos.TratarParaSobrenomesEspeciais(partesNome);
 
-            // Atribui na variável o restante do nome completo, exceto o sobrenome
-            string[] nome = partesNome.Take(partesNome.Length - 1).ToArray();
-
             // Atribui na variável a última parte do nome completo
-            string sobrenome = partesNome.Last();
+            string sobrenome = partesNome.LastOrDefault(l => !string.IsNullOrWhiteSpace(l));
+
+            // Atribui na variável o restante do nome completo, exceto o sobrenome
+            string[] nome = partesNome.Where(p => p != sobrenome).ToArray();
 
             // instancia um novo array de acordo com o número de registros da lista de nomes
             string[] nomeTratado = new string[partesNome.Length];
@@ -103,8 +98,18 @@ namespace ObrasBibliograficas.Servicos.Services
             // Reconstrói o nome, após todos os tratamentos
             string restoNome = string.Join(" ", nomeTratado);
 
-            // Contrói o nome completo totalmente formatado
-            string nomeCompletoFormatado = $"{sobrenome.ToUpper()}, {restoNome.Trim()}";
+            // Instancia a variável que armanenará o nome completo
+            string nomeCompletoFormatado = string.Empty;
+
+            // Verifica se existe algum conteúdo no restante do nome
+            if (!string.IsNullOrWhiteSpace(restoNome))
+            {
+                nomeCompletoFormatado = $"{sobrenome.ToUpper()}, {restoNome.Trim()}";
+            }
+            else
+            {
+               nomeCompletoFormatado = sobrenome.ToUpper();
+            }
 
             return nomeCompletoFormatado;
         }
