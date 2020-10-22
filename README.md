@@ -1,6 +1,4 @@
-# Obras Bibliográficas
-
-(LEIA ATÉ O FINAL)
+# Desafio Guide Investimentos
 
 Quando se lista o nome de autores de livros, artigos e outras publicações é comum que se apresente o nome do autor ou dos autores da seguinte forma: sobrenome do autor em letras maiúsculas, seguido de uma vírgula e da primeira parte do nome apenas com as iniciais maiúsculas.
 
@@ -18,12 +16,11 @@ As seguintes regras devem ser seguidas nesta formatação:
 * as partes do nome que não fazem parte do sobrenome devem ser impressas com a inicial maiúscula e com as demais letras minúsculas;
 * "da", "de", "do", "das", "dos" não fazem parte do sobrenome e não iniciam por letra maiúscula.
 
-## Testes por tecnologia
-* [.NET](https://github.com/guideti/obras-bibliograficas/blob/master/TESTE_DOTNET.md)
-* [Ruby](https://github.com/guideti/obras-bibliograficas/blob/master/TESTE_RUBY.md)
-* [Angular](https://github.com/guideti/obras-bibliograficas/blob/master/TESTE_ANGULAR.md)
+## Tecnologia
+* .Net Core 3.1
 
-## Procedimento para entrega
-Realize um fork deste repositório, desenvolva sua solução e encaminhe o seu repositório com o seu código. Arquivos compactados não serão aceitos.
+## Componentes
+* Swashbuckle.AspNetCore (Swagger)
 
-Altere o arquivo README para descrever quais componentes foram utilizados e como sua aplicação deverá ser executada.
+## Procedimento para executar a aplicação
+* Vídeo com a demonstração detalhada de como a aplicação deve ser executada:

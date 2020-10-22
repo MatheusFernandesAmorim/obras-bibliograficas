@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CWqAgkIgewlPgoYggsk6jhuJVRQQVvwl0BIe59tTJSsqtByhbB5+FHFs76b1omMbeuXwX/6Xem8NvIo4NhA85A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matheusfernandes\\source\\repos\\MatheusFernandesAmorim\\obras-bibliograficas\\ObrasBibliograficas.Servicos\\ObrasBibliograficas.Servicos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
